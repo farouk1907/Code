@@ -29,7 +29,6 @@ public:
 			cout << "Stack is empty on pop";
 		}
 		else {
-			item[top];
 			top--;
 		}
 	}
@@ -43,7 +42,7 @@ public:
 	}
 	void getMin() {
 		int smallest = item[0];
-		for (int i = 0;i < MAX;i++) {
+		for (int i = 0;i <= top;i++) {
 			item[i] = smallest;
 		}
 		cout << smallest << endl;
